@@ -1,42 +1,29 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.channel-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.channel-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.channel-item img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px; /* Adjust as needed */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.channel-details {
+  flex-grow: 1; /* This will make the details fill the remaining space */
 }
 
-.card {
-  padding: 2em;
+.search-bar {
+  width: 430px;
+  height: 40px;
+  margin-left: 10px;
 }
-
-.read-the-docs {
-  color: #888;
-}
+/* You can add additional styling for audio controls, channel names, etc. */
